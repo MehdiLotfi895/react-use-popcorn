@@ -1,0 +1,128 @@
+#header{
+    background-color: rgb(91,56,210);
+    height:65px;
+    width: 1500px;
+    margin-top: 15px;
+    margin-left: 10px;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color:white;
+    font-size: 17px;
+}
+
+#searchInput{
+    background-color: rgb(111, 70, 241);
+    border: none;
+    width:400px;
+    height:40px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    font-size: 17px;
+    padding-left: 20px;
+    color:rgb(203, 192, 192);
+}
+#searchInput::placeholder{
+    color:rgb(203, 192, 192);
+}
+
+.margin{
+    margin-bottom: 15px;
+}
+#searchInput:focus-within{
+    border: none;
+    outline: none;
+}
+#siteName{
+    font-size:25px;
+    font-weight:bold;
+    margin-left:30px;
+    display:flex;
+    align-items:center;
+}
+#popcorn{
+    font-size:40px;
+    margin-top:-8px;
+}
+#searchlistNumber{
+    margin-right:30px
+}
+#nav{
+    display: none;
+    position:absolute;
+    top:25px;
+    right:7%;
+    
+}
+@media (max-width:700px) and (min-width:320px){
+    #header{
+        height:50px;
+        width: 90%;
+        margin-top: 15px;
+        margin-left: 6%;
+        justify-content:normal;
+}
+#siteName{
+    font-size: 15px;
+    margin-left:0px;
+}
+#popcorn{
+    font-size:25px;
+}
+
+#searchInput{
+    width: 100%;
+    height:25px;
+    font-size: 10px;
+    padding-left: 10px;
+    margin-left: 15%;
+}
+#searchlistNumber{
+    display: none;
+}
+#nav{
+    display: block;
+}
+}
+
+@media(min-width:701px) and (max-width:1200px){
+    #root{
+        width:150%
+    }
+    #header{
+        height:65px;
+        width: 90%;
+        margin-top: 15px;
+        margin-left: 5%;
+        justify-content:space-between;
+}
+#siteName{
+    font-size: 30px;
+    margin-left:40px;
+}
+#popcorn{
+    font-size:45px;
+}
+
+#searchInput{
+    width: 100%;
+    height:40px;
+    font-size: 20px;
+    padding-left: 10px;
+    margin-left: 0%;
+}
+#searchlistNumber{
+    margin-right: 30px;
+}
+#nav{
+    display: none;
+}
+}
